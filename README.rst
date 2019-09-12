@@ -1,3 +1,7 @@
+
+SeeCode Scanner
+====================
+
 .. image:: https://img.shields.io/travis/seecode-audit/seecode-scanner/master.svg?label=travis-ci
    :target: https://travis-ci.org/seecode-audit/seecode-scanner
 
@@ -23,8 +27,6 @@
     :alt: GitHub license
     :target: https://github.com/seecode-audit/seecode-scanner/blob/master/LICENSE
 
-SeeCode Scanner
-====================
 
 .. rtd-inclusion-marker-do-not-remove
 

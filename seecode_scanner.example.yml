@@ -26,7 +26,7 @@ http:
 
 distributed:
   ftp:
-    host: "192.168.168.1.1"
+    host: "192.168.1.1"
     port: 21
     username: "seecode"
     password: "test1234"
