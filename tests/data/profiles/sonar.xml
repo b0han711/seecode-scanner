@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template version="1.0.0">
+    <config enable="True" sync="True">
+        <name>sonar</name>
+        <version>4.6</version>
+        <exclude_dir/>
+        <exclude_ext/>
+        <exclude_file/>
+    </config>
+    <engines>
+        <engine name="SonarScanner">
+            <parameters>
+                <item name="API_TOKEN">07a455219bf01c5e94c06e379c35372b3fb05443</item>
+                <item name="API_DOMAIN">http://10.168.66.158:9000</item>
+                <item name="SONAR_SCANNER_PATH">/usr/bin/sonar-scanner</item>
+                <item name="ENGINE_TIMEOUT">1200</item>
+                <item name="HTTP_TIMEOUT">10</item>
+                <item name="HTTP_TIMEOUT_RETRY">3</item>
+                <item name="HTTP_FAILED_RETRY">3</item>
+                <item name="SONAR_PROJECT_PROPERTIES">sonar.projectKey={{project_key}}
+sonar.projectName={{project_name}}
+sonar.projectVersion=1.0
+sonar.sources=.
+sonar.sourceEncoding=UTF-8
+sonar.exclusions=**/node_modules/**/*.*,
+sonar.host.url={{sonar_host}}
+sonar.login={{sonar_login}}
+sonar.java.binaries=.
+                </item>
+            </parameters>
+        </engine>
+    </engines>
+</template>

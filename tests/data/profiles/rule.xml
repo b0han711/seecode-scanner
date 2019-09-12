@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template version="1.0.0">
+    <config enable="True" sync="True">
+        <name>rule</name>
+        <version>4.6</version>
+        <exclude_dir/>
+        <exclude_ext/>
+        <exclude_file/>
+    </config>
+    <engines>
+        <engine name="RuleScanner">
+            <parameters/>
+            <whitelist>
+                <item id="7580">
+                    <name>误报密码参数排除规则</name>
+                    <key>common:password-exclude</key>
+                    <revision>0.27</revision>
+                    <risk id="4">信息</risk>
+                    <category>BUG</category>
+                    <match_type>content</match_type>
+                    <match_regex flag=""><![CDATA[PARAM_NAME_PASSWORD\s+=\s+['"].+['"]]]></match_regex>
+                </item>
+            </whitelist>
+            <blacklist>
+                <item id="7582">
+                    <name>SQL注入漏洞</name>
+                    <key>sql:inject</key>
+                    <revision>0.27</revision>
+                    <risk id="2">高危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>content</match_type>
+                    <size>51200</size>
+                    <match_regex flag=""><![CDATA["SELECT\s+.*?"\s+\+ ]]></match_regex>
+                </item>
+                <item id="7583">
+                    <name>密码硬编码</name>
+                    <key>common:password-hard</key>
+                    <revision>0.27</revision>
+                    <risk id="3">中危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>content</match_type>
+                    <file_ext>.java</file_ext>
+                    <match_regex flag="I"><![CDATA[PARAM_NAME_password\s+=\s+['"].+['"]]]></match_regex>
+                </item>
+            </blacklist>
+
+        </engine>
+    </engines>
+</template>

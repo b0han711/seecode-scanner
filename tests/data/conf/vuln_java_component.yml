@@ -1,0 +1,48 @@
+scan:
+  # 任务ID
+  task_id: 9527
+  # 扫描模板
+  template: "component_scan"
+  # 扫描模板完整路径
+  template_full_path:
+  # 扫描线程数
+  threads: 20
+  # 工作目录
+  work_dir: "/data/seecode/"
+  # 强制同步线上代码
+  force_sync_code: True
+  # 项目 git 地址
+  project_ssh: "git@github.com:seecode-audit/vuln_java.git"
+  # web
+  project_web: "https://github.com/seecode-audit/vuln_java"
+  # 项目名称
+  project_name: "vuln_java"
+  # 分支名称
+  project_branch: "master"
+  # 项目类型： online， offline
+  project_type: "online"
+  # 上传方式: local, ftp
+  project_upload_type: "local"
+  # 文件原始名称
+  project_file_origin_name: ""
+  # 文件MD5
+  project_file_hash: ""
+  # 应用名称
+  application_name:
+  # 应用Key
+  application_key:
+  # 分组名称
+  group_name: "seecode-audit"
+  # 分组key
+  group_key: "seecode-audit"
+  #取证
+  evidence_start_line_offset: 0
+  evidence_count: 5
+
+distributed:
+  ftp:
+    host: "127.0.0.1"
+    port: 21
+    username: "ftp"
+    password: "ftp123"
+    path: "/seecode/"

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template version="1.0.0"><config sync="True" enable="True"><name>component_scan</name><version>4.9</version><exclude_dir>.git/,bin/,node_modules/,assets/,static/,.svn/</exclude_dir><exclude_ext>.jpg,.jpeg,.png,.bmp,.gif,.ico,.cur,.eot,.otf,.svg,.ttf,.woff,.html,.htm,.css,.less,.scss,.styl,.min.js,.po,.mp3,.mp4,.swf,.exe,.sh,.dll,.so,.bat,.jar,.swp,.crt,.pdf,.doc,.docx,.csv,.md,.properties,.zip,.bak,.tar,.rar,.tar.gz,.rar,.7z,.iso,.db,.spf,.iml,.manifest,.psd,.as,.log,.template,.tpl</exclude_ext><exclude_file></exclude_file><task_timeout>7200</task_timeout></config><engines><engine name="RuleScanner"><parameters><item name="ENGINE_TIMEOUT">1200</item></parameters><component><item id="7582"><name>Apache Solr 远程代码执行(CVE-2019-0192)</name><key>java:apache-solr-cve-2019-0192</key><revision>0.43</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[solr-solrj]]></match_content><match_regex flag="I"><![CDATA[(5\.[0-5]{1}) ### 5.0-5.5
+(5\.2\.1) ### 5.0-5.5
+(5\.3\.[1-2]{1}) ### 5.3.1 - 5.3.2
+(5\.4\.1) ### 5.4.1
+(5\.5\.[1-5]{1}) ### 5.5.1 - 5.5.5
+(6\.[0-6]{1})
+(6\.0\.1)
+(6\.1\.1)
+(6\.2\.1)
+(6\.4\.[1-2]{1})
+(6\.5\.1)
+(6\.6\.[1-5]{1})]]></match_regex></item><item id="7584"><name>Apache Shiro 反序列化漏洞 (RCE)</name><key>java:apache-shiro</key><revision>0.09</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>groupId</match_type><match_content><![CDATA[org.apache.shiro]]></match_content><match_regex flag=""><![CDATA[(1\.2\.[0-4]{1}) ###1.2.x
+(1\.[0-1]{1}\.\d+) ###1.X.XX]]></match_regex></item><item id="7585"><name>SpringBoot应用监控Actuator使用的安全隐患</name><key>java:springboot-actuator</key><revision>0.04</revision><risk id="4">低危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[spring-boot-starter-actuator]]></match_content><match_regex flag=""><![CDATA[.*]]></match_regex></item><item id="7586"><name>Spring Framework 远程代码执行(CVE-2018-1270)</name><key>java:spring-framework-cve-2018-1270</key><revision>0.09</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>groupId</match_type><match_content><![CDATA[org.springframework]]></match_content><match_regex flag=""><![CDATA[(5\.0\.[0-4]{1}) ### 5.0.x -5.0.5
+4\.0  ### 4.0
+(4\.3\.1[0-5]{1}) ### 4.3.1x.release
+(4\.3\.[0-9]{1}\.) ### 4.3.x.release]]></match_regex></item><item id="7587"><name>fastjson 远程代码执行漏洞</name><key>java:fastjson-rce</key><revision>0.41</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[fastjson]]></match_content><match_regex flag=""><![CDATA[[0-1]\.[0-2]\.[0-2][0-9]$ ### 1.2.xx
+1\.2\.[3-4][0-9]$ ### 1.2.40-49
+1\.2\.5[0-1]$ ### 1.2.50-51
+[0-1]\.[0-2]\.\d{1}$ ### 1.2.x
+[0-1]\.[0-1]\.\d+$ ### 1.1.41]]></match_regex></item><item id="39354"><name>Jackson-databind 反序列化漏洞 (CVE-2019-12384)</name><key>java:jackson-databind-cve-2019-12384</key><revision>0.19</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[jackson-databind]]></match_content><match_regex flag=""><![CDATA[(2\.7\.[0-9]{1})$
+(2\.7\.0:\-)$
+(2\.7\.0:rc[1-3]{1})$
+(2\.7\.1\-1)$
+(2\.7\.9\.[1-5]{1})$
+(2\.8\.8\.1)$
+(2\.8\.[1-9]{1})$
+(2\.8\.10)$
+(2\.8\.11)$
+(2\.8\.11\.[1-3]{1})$
+(2\.9\.[0-9]{1})$
+(2\.9\.0:\-)$
+(2\.9\.0:prerelease[1-4]{1})$
+(2\.9\.9\.1)$
+(2\.9\.[1-9]{1})$]]></match_regex></item><item id="55015"><name>Jackson-databind 任意命令执行漏洞（CVE-2017-17485）</name><key>java:jackson-databind-cve-2017-17485</key><revision>0.15</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[jackson-databind]]></match_content><match_regex flag=""><![CDATA[(2\.8\.[0-9]{1})$ ### 2.8.0 -2.8.9
+(2\.8\.8\.1)$
+(2\.8\.10)$
+(2\.9\.[1-3]{1})$]]></match_regex></item><item id="55016"><name>Jackson-databind 反序列化漏洞（CVE-2017-7525）</name><key>java:jackson-databind-cve-2017-7525</key><revision>0.12</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[jackson-databind]]></match_content><match_regex flag="I"><![CDATA[(2\.6\.[0-8]{1})$ ### 2.6.0 - 2.6.8
+(2\.6\.0:\-)$ ### 2.6.0:-
+(2\.6\.0:rc[1-4]{1})$ ### 2.6.0:rc1-rc4
+(2\.7\.[0-9]{1})$ ### 2.7.0 - 2.7.9
+(2\.7\.0:\-)$ ### 2.7.0:-
+(2\.7\.0:rc[1-3]{1})$ ### 2.7.0:rc1-rc3
+(2\.7\.1\-1)$ ### 2.7.1-1
+(2\.8\.[0-8]{1})$ ### 2.8.0 - 2.8.8
+(2\.8\.1\.1)$ ### 2.8.8.1]]></match_regex></item><item id="55017"><name>Jackson-databind polymorphic反序列化漏洞 (CVE-2018-12022)</name><key>java:jackson-databind-cve-2018-12022</key><revision>0.08</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[jackson-databind]]></match_content><match_regex flag=""><![CDATA[(2\.7\.[0-9]{1})$ ### 2.7.0 - 2.7.9
+(2\.7\.0:\-)$ ### 2.7.0:-
+(2\.7\.0:rc[1-3]{1})$ ### 2.7.0:rc1-rc3
+(2\.7\.1\-1)$ ### 2.7.1-1
+(2\.7\.9\.[1-3]{1})$ ### 2.7.9.1-3
+(2\.8\.[0-9]{1})$ ### 2.8.0-2.8.9
+(2\.8\.1[0-1]{1})$ ### 2.8.10-11
+(2\.8\.11\.1)$ ### 2.8.11.1
+(2\.9\.[0-5]{1})$ ### 2.9.0-5
+(2\.9\.0:\-)$ ### 2.9.0:-
+(2\.9\.0:prerelease[1-4]{1})$ ### 2.9.0:prerelease1-4]]></match_regex></item><item id="55018"><name>Jackson-databind polymorphic反序列化漏洞 (CVE-2018-14719)</name><key>java:jackson-databind-cve-2018-14719</key><revision>0.13</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[jackson-databind]]></match_content><match_regex flag=""><![CDATA[(2\.6\.[0-7]{1})$ ### 2.6.0-7
+(2\.6\.0:\-)$ ### 2.6.0:-
+(2\.6\.0:rc[1-4]{1})$ ### 2.6.0:rc1-rc4
+(2\.6\.7\.1)$ ### 2.6.7.1
+(2\.7\.[0-9]{1})$ ### 2.7.0 - 2.7.9
+(2\.7\.0:\-)$ ### 2.7.0:-
+(2\.7\.0:rc[1-3]{1})$ ### 2.7.0:rc1-rc3
+(2\.7\.1\-1)$ ### 2.7.1-1
+(2\.7\.9\.[1-4]{1})$ ### 2.7.9.1-4
+(2\.8\.[0-9]{1})$ ### 2.8.0-2.8.9
+(2\.8\.8\.1)$ ### 2.8.8.1
+(2\.8\.1[0-1]{1})$ ### 2.8.10-11
+(2\.8\.11\.[1-2]{1})$ ### 2.8.11.1-2
+(2\.9\.[0-6]{1})$ ### 2.9.0-6
+(2\.9\.0:\-)$ ### 2.9.0:-
+(2\.9\.0:pr[1-4]{1})$ ### 2.9.0:pr1-4
+(2\.9\.0:prerelease[1-4]{1})$ ### 2.9.0:prerelease1-4]]></match_regex></item><item id="55019"><name>Jackson-databind polymorphic反序列化漏洞 (CVE-2018-19362)</name><key>java:jackson-databind-cve-2018-19362</key><revision>0.09</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[jackson-databind]]></match_content><match_regex flag=""><![CDATA[(2\.6\.[0-7]{1})$ ### 2.6.0-7
+(2\.6\.0:\-)$ ### 2.6.0:-
+(2\.6\.0:rc[1-4]{1})$ ### 2.6.0:rc1-rc4
+(2\.6\.7\.[1-2]{1})$ ### 2.6.7.1-2
+(2\.7\.[0-9]{1})$ ### 2.7.0 - 2.7.9
+(2\.7\.0:\-)$ ### 2.7.0:-
+(2\.7\.0:rc[1-3]{1})$ ### 2.7.0:rc1-rc3
+(2\.7\.1\-1)$ ### 2.7.1-1
+(2\.7\.9\.[1-4])$ ### 2.7.9.1-4
+(2\.8\.[0-9]{1})$ ### 2.8.0-2.8.9
+(2\.8\.8\.1)$ ### 2.8.8.1
+(2\.8\.1[0-1]{1})$ ### 2.8.10-11
+(2\.8\.11\.[1-2]{1})$ ### 2.8.11.1-2
+(2\.9\.[0-7]{1})$ ### 2.9.0-7
+(2\.9\.0:\-)$ ### 2.9.0:-
+(2\.9\.0:prerelease[1-4]{1})$ ### 2.9.0:prerelease1-4]]></match_regex></item><item id="55020"><name>Jackson-databind SubTypeValidator.java 存在远程代码执行漏洞 (CVE-2019-14379)</name><key>java:jackson-databind-cve-2019-14379</key><revision>0.10</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[jackson-databind]]></match_content><match_regex flag=""><![CDATA[(2\.7\.[0-9]{1})$ ### 2.7.0 - 2.7.9
+(2\.7\.0:\-)$ ### 2.7.0:-
+(2\.7\.0:rc[1-3]{1})$ ### 2.7.0:rc1-rc3
+(2\.7\.1\-1)$ ### 2.7.1-1
+(2\.7\.9\.[1-5]{1})$ ### 2.7.9.1-5
+(2\.8\.[0-9]{1})$ ### 2.8.0-2.8.9
+(2\.8\.1[0-1]{1})$ ### 2.8.10-11
+(2\.8\.11\.[1-3]{1})$ ### 2.8.11.1-3
+(2\.9\.[0-9]{1})$ ### 2.9.0-5
+(2\.9\.0:\-)$ ### 2.9.0:-
+(2\.9\.0:prerelease[1-4]{1})$ ### 2.9.0:prerelease1-4
+(2\.9\.9\.1)$ ### 2.9.9.1]]></match_regex></item><item id="55021"><name>Fastjson远程拒绝服务漏洞</name><key>java:fastjson-dos</key><revision>0.06</revision><risk id="3">中危</risk><category>Vulnerability</category><match_type>name</match_type><match_content><![CDATA[fastjson]]></match_content><match_regex flag=""><![CDATA[([0-1]\.[0-2]\.[0-2][0-9])$ ### 1.2.xx
+(1\.2\.[3-4][0-9])$ ### 1.2.40-49
+(1\.2\.5[0-9])$ ### 1.2.50-59
+([0-1]\.[0-2]\.\d{1})$ ### 1.2.x
+([0-1]\.[0-1]\.\d+)$ ### 1.1.41]]></match_regex></item></component><whitelist/><blacklist/></engine></engines></template>

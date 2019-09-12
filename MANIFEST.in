@@ -1,0 +1,4 @@
+include requirements/*.txt
+include CHANGELOG
+include README.rst
+recursive-include * *.xml *.txt

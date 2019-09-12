@@ -1,0 +1,33 @@
+# SeeCode 服务端设置
+server:
+  domain: "http://seecode.com"
+  api_uri: "/api/v2/"
+  token: "dca58d563917b9325252f8a4b6c57e7331349052"
+  public_key_path:
+  private_key_path:
+
+celery:
+  broker_url: ""
+  timezone: "Asia/Shanghai"
+  c_force_root: False
+
+# 用于 Agent 中与服务器端Http通信时的设置
+http:
+  timeout: 10
+  timeout_try: 3
+  failed_try: 3
+  try_status_code: 500, 502, 503
+  proxies:
+    http:
+    https:
+    socks5:
+  headers:
+    accept-encoding: "gzip, deflate"
+
+distributed:
+  ftp:
+    host: "192.168.168.1.1"
+    port: 21
+    username: "seecode"
+    password: "test1234"
+    path: "/home/seecode/"

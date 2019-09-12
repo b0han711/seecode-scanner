@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template version="1.0.0">
+    <config sync="True" enable="True">
+        <name>component_scan</name>
+        <version>3.1</version>
+        <exclude_dir>.git/,bin/,node_modules/</exclude_dir>
+        <exclude_ext>
+            .jpg,.jpeg,.png,.bmp,.gif,.ico,.cur,.eot,.otf,.svg,.ttf,.woff,.html,.htm,.css,.less,.scss,.styl,.min.js,.po,.mp3,.mp4,.swf,.exe,.sh,.dll,.so,.bat,.jar,.swp,.crt,.pdf,.doc,.docx,.csv,.md,.properties,.zip,.bak,.tar,.rar,.tar.gz,.rar,.7z,.iso,.db,.spf,.iml,.manifest,.psd,.as,.log,.template,.tpl
+        </exclude_ext>
+        <exclude_file></exclude_file>
+    </config>
+    <engines>
+        <engine name="RuleScanner">
+            <parameters>
+                <item name="ENGINE_TIMEOUT">1200</item>
+            </parameters>
+            <component>
+                <item id="7582">
+                    <name>apache solr 远程代码执行</name>
+                    <key>apache:solr-rce-cve-2019-0192</key>
+                    <revision>0.27</revision>
+                    <risk id="3">中危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>groupId</match_type>
+                    <match_content><![CDATA[org.apache.solr]]></match_content>
+                    <match_regex flag=""><![CDATA[[5-6]\.\d(.\d){0,} ###<7.0.0]]></match_regex>
+                </item>
+                <item id="7584">
+                    <name>Apache shiro反序列化漏洞</name>
+                    <key>java:apache-shiro-rce</key>
+                    <revision>0.02</revision>
+                    <risk id="3">中危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>groupId</match_type>
+                    <match_content><![CDATA[org.apache.shiro]]></match_content>
+                    <match_regex flag=""><![CDATA[1\.2\.[0-4] ###1.2.x
+1\.[0-1]\.\d+ ###1.X.XX]]></match_regex>
+                </item>
+                <item id="7585">
+                    <name>SpringBoot应用监控Actuator使用的安全隐患</name>
+                    <key>java:springboot-actuator</key>
+                    <revision>0.04</revision>
+                    <risk id="4">低危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>name</match_type>
+                    <match_content><![CDATA[spring-boot-starter-actuator]]></match_content>
+                    <match_regex flag=""><![CDATA[.*]]></match_regex>
+                </item>
+                <item id="7586">
+                    <name>Spring Cloud Config Server 任意文件读取漏洞</name>
+                    <key>java:spring-cloud-config-server-cve-2019-3799</key>
+                    <revision>0.02</revision>
+                    <risk id="3">中危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>name</match_type>
+                    <match_content><![CDATA[spring-cloud-config-server]]></match_content>
+                    <match_regex flag=""><![CDATA[2\.1\.[0-1]$ ### 2.1.0
+2\.0\.[0-3]$ ### 2.0.0
+1\.4\.[0-5]$ ### 1.4.1
+1\.3\.\d$ ### 1.3.1]]></match_regex>
+                </item>
+                <item id="7587">
+                    <name>fastjson 远程代码执行漏洞</name>
+                    <key>java:fastjson-rce-</key>
+                    <revision>0.04</revision>
+                    <risk id="3">中危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>name</match_type>
+                    <match_content><![CDATA[fastjson]]></match_content>
+                    <match_regex flag=""><![CDATA[[0-1]\.[0-2]\.[0-2][0-9]$ ### 1.2.xx
+1\.2\.[3-4][0-9]$ ### 1.2.40-49
+1\.2\.5[0-1]$ ### 1.2.50-51
+[0-1]\.[0-2]\.\d{1}$ ### 1.2.x
+[0-1]\.[0-1]\.\d+$ ### 1.1.41]]></match_regex>
+                </item>
+                <item id="7588">
+                    <name>Spring Framework 远程代码执行(CVE-2018-1270)</name>
+                    <key>java:spring-framework-rce-cve-2018-1270</key>
+                    <revision>0.02</revision>
+                    <risk id="3">中危</risk>
+                    <category>Vulnerability</category>
+                    <match_type>groupId</match_type>
+                    <match_content><![CDATA[org.springframework]]></match_content>
+                    <match_regex flag=""><![CDATA[(5\.0\.[0-4]{1}) ### 5.0.x -5.0.5
+4\.0  ### 4.0
+(4\.3\.1[0-5]{1}) ### 4.3.1x.release
+(4\.3\.[0-9]{1}\.) ### 4.3.x.release]]></match_regex>
+                </item>
+            </component>
+            <whitelist/>
+            <blacklist/>
+        </engine>
+    </engines>
+</template>

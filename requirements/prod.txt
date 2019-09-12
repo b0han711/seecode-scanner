@@ -1,0 +1,9 @@
+requests
+redis
+lxml
+pyyaml>=5.1
+celery>=4.2.0
+clocwalk>=0.2.0
+gevent
+rsa
+func_timeout

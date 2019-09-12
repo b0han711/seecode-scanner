@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template version="1.0.0">
+    <config sync="True" enable="True">
+        <name>normal</name>
+        <version>5.1</version>
+        <exclude_dir>.git/,bin/,node_moudle/</exclude_dir>
+        <exclude_ext>
+            .jpg,.jpeg,.png,.bmp,.gif,.ico,.cur,.eot,.otf,.svg,.ttf,.woff,.html,.htm,.css,.less,.scss,.styl,.min.js,.po,.mp3,.mp4,.swf,.exe,.sh,.dll,.so,.bat,.jar,.swp,.crt,.txt,.pdf,.doc,.docx,.csv,.md,.properties,.zip,.bak,.tar,.rar,.tar.gz,.rar,.7z,.iso,.db,.spf,.iml,.manifest,.psd,.as,.log,.template,.tpl
+        </exclude_ext>
+        <exclude_file></exclude_file>
+    </config>
+    <engines>
+        <engine name="PluginScanner">
+            <parameters>
+                <item name="ENGINE_TIMEOUT">1200</item>
+            </parameters>
+            <whitelist>
+                <item id="7583">
+                    <name>跳过测试文件与目录</name>
+                    <key>java:pass-test-file-dir</key>
+                    <revision>0.03</revision>
+                    <risk id="5">信息</risk>
+                    <category id="3">Vulnerability</category>
+                    <module>seecode_scanner.plugins.whitelist.pass_file_dir</module>
+                    <script>plugins/whitelist/pass_file_dir.py</script>
+                </item>
+            </whitelist>
+            <blacklist/>
+        </engine>
+    </engines>
+</template>

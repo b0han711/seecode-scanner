@@ -1,0 +1,13 @@
+requests
+redis
+lxml
+pyyaml>=5.1
+celery
+clocwalk>=0.2.0
+gevent
+rsa
+nose
+coverage
+func_timeout
+sphinx
+sphinx_rtd_theme
