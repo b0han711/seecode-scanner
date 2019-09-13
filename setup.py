@@ -26,7 +26,7 @@ setup(
         'pyyaml',
         'func_timeout',
         'rsa',
-        'gevent',
+        'gevent==1.4.0',
         'clocwalk>=0.2.0',
         'celery>=4.2.0',
         'redis',
