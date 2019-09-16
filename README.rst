@@ -133,7 +133,7 @@ seecode_scanner.yml 是 seecode-scanner 的核心配置文件，默认路径为 
     
     distributed:
       ftp:
-        host: "192.168.168.1.1"
+        host: "192.168.1.1"
         port: 21
         username: "seecode"
         password: "test1234"
