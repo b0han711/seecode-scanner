@@ -3,25 +3,24 @@ SeeCode Scanner
 ====================
 
 .. image:: https://img.shields.io/travis/seecode-audit/seecode-scanner/master.svg?label=travis-ci
+   :alt: 
    :target: https://travis-ci.org/seecode-audit/seecode-scanner
 
 .. image:: https://img.shields.io/badge/python-3.6|3.7-brightgreen.svg
+    :alt: 
     :target: https://www.python.org/
 
 .. image:: https://img.shields.io/github/issues/seecode-audit/seecode-scanner.svg
     :alt: GitHub issues
     :target: https://github.com/seecode-audit/seecode-scanner/issues
 
-
 .. image:: https://img.shields.io/github/forks/seecode-audit/seecode-scanner.svg
     :alt: GitHub forks
     :target: https://github.com/seecode-audit/seecode-scannernetwork
 
-
 .. image:: https://img.shields.io/github/stars/seecode-audit/seecode-scanner.svg
     :alt: GitHub stars
     :target: https://github.com/Mseecode-audit/seecode-scanner/stargazers
-
 
 .. image:: https://img.shields.io/github/license/seecode-audit/seecode-scanner.svg
     :alt: GitHub license
@@ -316,3 +315,9 @@ seecode_scanner.yml 是 seecode-scanner 的核心配置文件，默认路径为 
 
 该参数等同于 celery 中的 -n 参数。默认值为 sca1。
 
+
+捐赠
+--------
+
+* BTC 地址：18F4VFDX2MCEXod7zjUF8NepUdAspEcJR8
+* ETH 地址：0xB3Bc55F4AAa8E87D3675B547e31d3eEbb585175c
