@@ -315,6 +315,14 @@ seecode_scanner.yml 是 seecode-scanner 的核心配置文件，默认路径为 
 
 该参数等同于 celery 中的 -n 参数。默认值为 sca1。
 
+TODO
+--------
+
+**引擎集成**
+
+* https://github.com/OWASP/wpBullet
+* https://github.com/pmd/pmd
+* https://github.com/Tencent/TscanCode
 
 捐赠
 --------
