@@ -11,7 +11,7 @@
         <engine name="SonarScanner">
             <parameters>
                 <item name="API_TOKEN">07a455219bf01c5e94c06e379c35372b3fb05443</item>
-                <item name="API_DOMAIN">http://10.168.66.158:9000</item>
+                <item name="API_DOMAIN">http://sonar.example.com</item>
                 <item name="SONAR_SCANNER_PATH">/usr/bin/sonar-scanner</item>
                 <item name="ENGINE_TIMEOUT">1200</item>
                 <item name="HTTP_TIMEOUT">10</item>
